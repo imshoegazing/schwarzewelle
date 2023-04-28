@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Schwarze Welle</title>
+  </head>
+  <body>
+    <section id="schwarzewelle">
+      <div class="header">
+        <h1><span>Online </span>'Schwarze Welle'<span> Radio</span></h1>
+      </div>
+      <div class="radio">
+        <div class="content">
+          <div class="menu">
+            <ul>
+              <li id="home">
+                <a href="#">Home</a>
+              </li>
+              <li id="listen"><a href="#">Listen</a></li>
+              <li id="history"><a href="#">History</a></li>
+              <li id="contact"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="window-content">
+            <div class="window window-home active">
+              <h1 class="welcome">Welcome!</h1>
+              <h2 class="berlin">We are Berlin based online radio!</h2>
+              <div id="text"></div>
+            </div>
+            <div class="window window-listen">
+              <div><h2>Now playing:</h2></div>
+              <div class="recent-track">
+                <div class="recent-track__icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h1 class="recent-track__artist">HTRK</h1>
+                <p class="recent-track__name">- Body Lotion</p>
+              </div>
+
+              <div class="music-container" id="music-container">
+                <div class="music-info">
+                  <h4 id="title"></h4>
+                  <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                  </div>
+                </div>
+
+                <audio src="music/HTRK.mp3" id="audio"></audio>
+
+                <div class="img-container">
+                  <img src="images/logo.png" alt="music-cover" id="cover" />
+                </div>
+                <div class="navigation">
+                  <button id="prev" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                  </button>
+                  <button id="play" class="action-btn action-btn-big">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button id="next" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="window window-history">
+              <div id="playlist-history"></div>
+            </div>
+            <div class="window window-contact">
+              <div class="contacts">
+                <a href="#" target="_blank"
+                  ><i class="social-icon fa-brands fa-facebook fa-1xl"></i
+                ></a>
+                <a href="#" target="_blank"
+                  ><i class="social-icon fa-brands fa-instagram fa-1xl"></i
+                ></a>
+                <a href="#" target="_blank"
+                  ><i class="social-icon fa-brands fa-square-lastfm fa-1xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="logo"></div>
+      </div>
+
+      <div class="footer">
+        <p>Schwarze Welle &copy 2023</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
